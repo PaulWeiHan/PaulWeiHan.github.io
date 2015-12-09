@@ -1,3 +1,10 @@
+---
+
+title: This is my title
+layout: post
+
+---
+
 **声明：创建本文档的目的是出于个人学习，在使用中学习Markdown语法。**
 
 **参考：[Markdown 语法说明 (简体中文版)][rikuGithub]**
