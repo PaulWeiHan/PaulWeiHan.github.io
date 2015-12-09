@@ -1,5 +1,5 @@
 ---
-title: This is my title
+title: Markdown tutorial
 layout: post
 ---
 
