@@ -11,8 +11,8 @@ layout: post
 
 
 *   [概述](#overview)
-    *   [兼容 HTML](##html)
-    *   [特殊字符自动转换](##autoescape)
+    *   [兼容 HTML](#html)
+    *   [特殊字符自动转换](#autoescape)
 *   [区块元素](#block)
     *   [段落和换行](#p)
     *   [标题](#header)
@@ -94,6 +94,7 @@ Markdown 让你可以自然地书写字符，需要转换的由它来处理好�
 所以你如果要在文档中插入一个版权符号 `©`，你可以这样写：
 
     &copy;
+
 
 Markdown 会保留它不动。而若你写：
 
