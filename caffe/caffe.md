@@ -10,14 +10,11 @@ layout: post
 
 [CaffeOfficial]: http://caffe.berkeleyvision.org "caffe yangqing jia"
 
-# Installation
+#Installation
 
---------
+[Link to caffe installation doc](http://caffe.berkeleyvision.org/installation.html)
 
-Prior to installing, have a glance through this guide and take note of the details for your platform. We install and run Caffe on Ubuntu 14.04 and 12.04, OS X 10.10 / 10.9 / 10.8, and AWS. The official Makefile and Makefile.config build are complemented by an automatic CMake build from the community.
+#Training LeNet on MNIST with Caffe
 
-*   [Prerequisites](#Prerequisites)
-
-## Prerequisites
-
+[How to run example: Training LeNet on MNIST with Caffe](http://caffe.berkeleyvision.org/gathered/examples/mnist.html)
 
