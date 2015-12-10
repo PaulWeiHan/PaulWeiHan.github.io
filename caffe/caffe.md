@@ -16,7 +16,7 @@ layout: post
 
 Prior to installing, have a glance through this guide and take note of the details for your platform. We install and run Caffe on Ubuntu 14.04 and 12.04, OS X 10.10 / 10.9 / 10.8, and AWS. The official Makefile and Makefile.config build are complemented by an automatic CMake build from the community.
 
-* [Prerequisites][#Prerequisites]
+*   [Prerequisites][#Prerequisites]
 
 ## Prerequisites
 
