@@ -12,10 +12,10 @@ layout: post
 ## 1. 安装开发所需的依赖包
 安装开发所需要的一些基本包
 
-```sh
-sudo apt-get install build-essential  # basic requirement
-sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler #required by caffe
-```
+  ```sh
+  sudo apt-get install build-essential  # basic requirement
+  sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler #required by caffe
+  ```
 
 ## 2. 安装CUDA及驱动
 ### 2.1 准备工作
