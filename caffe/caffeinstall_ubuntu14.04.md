@@ -12,10 +12,10 @@ layout: post
 ## 1. 安装开发所需的依赖包
 安装开发所需要的一些基本包
 
-  ```sh
-  sudo apt-get install build-essential  # basic requirement
-  sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler #required by caffe
-  ```
+```sh
+sudo apt-get install build-essential  # basic requirement
+sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler #required by caffe
+```
 
 ## 2. 安装CUDA及驱动
 ### 2.1 准备工作
@@ -27,74 +27,58 @@ layout: post
    ```sh
    sudo service lightdm stop
    ```
-
 该命令会关闭lightdm。如果你使用 gdm或者其他的desktop manager, 请在安装NVIDIA驱动前关闭他。
 
 ### 2.2 下载deb包及安装CUDA
 使用deb包安装CUDA及驱动能省去很多麻烦(参见[CUDA Starting Guide](http://developer.download.nvidia.com/compute/cuda/6_5/rel/docs/CUDA_Getting_Started_Linux.pdf))。下载对应于你系统的[CUDA deb包](https://developer.nvidia.com/cuda-downloads), 然后用下列命令添加软件源
-
-  ```sh
-   sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
-   sudo apt-get update
-  ```
-
+```sh
+ sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
+ sudo apt-get update
+```
 然后用下列命令安装CUDA
-
-  ```sh
-   sudo apt-get install cuda
-  ```
-
+```sh
+ sudo apt-get install cuda
+```
 安装完成后 reboot.
-
-  ```sh
-  sudo reboot
-  ```
+```sh
+sudo reboot
+```
 
 ### 2.3 安装cuDNN
 **(03-25: 今天下最新的caffe回来发现编译不过啊一直CUDNN报错浪费了我几个小时没搞定! 后来才发现caffe15小时前的更新开始使用cudnn v2, 但是官网上并没有明显提示!!! 坑爹啊!)**
 cuDNN能加速caffe中conv及pooling的计算。首先下载cuDNN, 然后执行下列命令解压并安装
-
-  ```sh
-  tar -zxvf cudnn-6.5-linux-x64-v2.tgz
-  cd cudnn-6.5-linux-x64-v2
-  sudo cp lib* /usr/local/cuda/lib64/
-  sudo cp cudnn.h /usr/local/cuda/include/
-  ```
-
+```sh
+tar -zxvf cudnn-6.5-linux-x64-v2.tgz
+cd cudnn-6.5-linux-x64-v2
+sudo cp lib* /usr/local/cuda/lib64/
+sudo cp cudnn.h /usr/local/cuda/include/
+```
 更新软链接
-
-  ```sh
-  cd /usr/local/cuda/lib64/
-  sudo rm -rf libcudnn.so libcudnn.so.6.5
-  sudo ln -s libcudnn.so.6.5.48 libcudnn.so.6.5
-  sudo ln -s libcudnn.so.6.5 libcudnn.so
-  ```
+```sh
+cd /usr/local/cuda/lib64/
+sudo rm -rf libcudnn.so libcudnn.so.6.5
+sudo ln -s libcudnn.so.6.5.48 libcudnn.so.6.5
+sudo ln -s libcudnn.so.6.5 libcudnn.so
+```
 
 ### 2.4 设置环境变量
 安装完成后需要在`/etc/profile`中添加环境变量, 在文件最后添加:
-
-  ```sh
-  PATH=/usr/local/cuda/bin:$PATH
-  export PATH
-  ```
-
+```sh
+PATH=/usr/local/cuda/bin:$PATH
+export PATH
+```
 保存后, 执行下列命令, 使环境变量立即生效
-
-  ```
-  source /etc/profile
-  ```
-
+```
+source /etc/profile
+```
 同时需要添加lib库路径： 在 `/etc/ld.so.conf.d/`加入文件 `cuda.conf`, 内容如下
-
-  ```sh
-  /usr/local/cuda/lib64
-  ```
-
+```sh
+/usr/local/cuda/lib64
+```
 保存后，执行下列命令使之立刻生效
-
-  ```sh
-  sudo ldconfig
-  ```
+```sh
+sudo ldconfig
+```
  
 
 ## 3. 安装CUDA SAMPLE
