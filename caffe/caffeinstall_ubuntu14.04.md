@@ -161,9 +161,9 @@ sudo ldconfig
 1. 下载[安装脚本](https://github.com/bearpaw/Install-OpenCV)
 2. 进入目录 `Install-OpenCV/Ubuntu/2.4`
 3. 执行脚本
-   ```sh
-   sudo ./opencv2_4_10.sh
-   ```
+```sh
+sudo ./opencv2_4_10.sh
+```
 
 #### 安装2.4.9 (deprecated)
 Github上有人已经写好了完整的[安装脚本](https://github.com/jayrambhia/Install-OpenCV), 能自动安装所有dependencies. 下载该脚本，进入`Ubuntu/2.4` 目录, 给所有shell脚本加上可执行权限
