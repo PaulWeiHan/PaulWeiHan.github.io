@@ -61,7 +61,7 @@ sudo apt-get install build-essential(**done**)
 1. 安装开发所需的依赖包
 ```sh
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler #required by caffe    (**done**)
-```sh 
+```
 ------------------------------------------------------------------------------------------------
 
 
@@ -168,7 +168,7 @@ Result = PASS
 .build_release/src/caffe/proto/caffe.pb.cc:18420:63: error: ‘class google::protobuf::io::CodedInputStream’ has no member named ‘ReadTagWithCutoff’
      ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
 
-```sh
+```
 ##报错已解决，似是是安装选项选择错误，将另份份caffe的makefile进行替换就以以正确编译
 ##（关于caffe安装的另一份教程：http://www.cnblogs.com/cj695/p/4498270.html）含有protobuf问题
 
@@ -188,7 +188,7 @@ Result = PASS
 [----------] Global test environment tear-down
 [==========] 1128 tests from 198 test cases ran. (144409 ms total)
 
-···sh
+···
 ##http://www.aiuxian.com/article/p-2150379.html 从这个网页中看，似乎这个是正常的
 
 2. 安装matlab2013b （位置:usr/local/matlab)（**done**)
@@ -207,7 +207,7 @@ Result = PASS
 .build_release/src/caffe/proto/caffe.pb.cc:19263:63: error: ‘class google::protobuf::io::CodedInputStream’ has no member named ‘ReadTagWithCutoff’
      ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
 
-```sh
+```
 ## 估计是本机不持持这种编译方式，所以换make all，可以顺利编译
 
 ##caffe2 make runtest报告
@@ -221,7 +221,7 @@ Result = PASS
 
   YOU HAVE 2 DISABLED TESTS
 
-```sh
+```
 ##搜索了别人的编译效果，都会出现这个报错，而且有人将这个当做编译成功的标志，求问？
 
 ##编译Matlab wrapper
@@ -237,7 +237,7 @@ Warning: You are using gcc version "4.8.4".  The version
          For a list of currently supported compilers see: 
          http://www.mathworks.com/support/compilers/current_release/
 
-```sh
+```
 ##应该是需要将gcc降级（*×未做×*）
   降级方法：**undone** *只是从网上找到这个方法，我还没给gcc降级*
 Ubuntu14.04自带的gcc版本是4.8，MATLAB2014a支持的最高版本为4.7x。因此，需要安装gcc4.7，并给gcc降级
