@@ -187,8 +187,8 @@ Result = PASS
 
 [----------] Global test environment tear-down
 [==========] 1128 tests from 198 test cases ran. (144409 ms total)
+```
 
-···
 ##http://www.aiuxian.com/article/p-2150379.html 从这个网页中看，似乎这个是正常的
 
 2. 安装matlab2013b （位置:usr/local/matlab)（**done**)
