@@ -15,10 +15,12 @@ layout: post
 [Link to caffe installation doc](http://caffe.berkeleyvision.org/installation.html)
 
 [Caffe + Ubuntu 14.04 64bit + CUDA 6.5 配置说明](caffeinstall_ubuntu14.04.html)
+
 [Caffe + Ubuntu 12.04 64bit + CUDA 6.5 配置说明](caffeinstall_ubuntu12.04.html)
 
 [Our caffe server log file](log.html)
-[Our caffe makefile.config file](Makefile.config.example)
+
+[Our caffe makefile.config file](Makefile.config.html)
 
 #Training LeNet on MNIST with Caffe
 
