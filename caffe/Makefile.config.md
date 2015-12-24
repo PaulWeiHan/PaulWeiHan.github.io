@@ -7,7 +7,7 @@ layout: post
     # Contributions simplifying and improving our build system are welcome!
 
     # cuDNN acceleration switch (uncomment to build with cuDNN).
-    # USE_CUDNN := 1
+     USE_CUDNN := 1
 
     # CPU-only switch (uncomment to build without GPU support).
     # CPU_ONLY := 1
