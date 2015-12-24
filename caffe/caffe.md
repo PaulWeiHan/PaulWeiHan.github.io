@@ -18,6 +18,7 @@ layout: post
 [Caffe + Ubuntu 12.04 64bit + CUDA 6.5 配置说明](caffeinstall_ubuntu12.04.html)
 
 [Our caffe server log file](log.html)
+[Our caffe makefile.config file](Makefile.config.example)
 
 #Training LeNet on MNIST with Caffe
 
