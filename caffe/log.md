@@ -438,7 +438,7 @@ make runtest报错：
 
 ----------------------------------------------------------------------------------------------
 
-# 2015-12-30 by Paul W. REN
+# 2015-01-06 by Paul W. REN
 
 1. 在caffe_root/python 目录下尝试 进入python import caffe 报错。
     Traceback (most recent call last):
@@ -587,6 +587,7 @@ make pycaffe
 ```
 终于可以成功 **import caffe** 了！！！！！
 
+7. 在*~/.bashrc*文件中添加python搜索路径：export PYTHONPATH＝~/gaze/renwh/caffe\_with\_cudnnv3/python:$PYTHONPATH.
 
 
 ----------------------------------------------------------------------------------------------
