@@ -92,10 +92,6 @@ From file *lenet_solver.prototxt*, it's easy to see that the network is defined 
 
 [Code ( Including fast-cnn cnn )][Ross Girshick' s github]
 
-[RCNN readme file][rcnnreadmefile]
-
-[rcnnreadmefile]: rcnn_readme.html
-
 [Ross Girshick' s github]: https://github.com/rbgirshick
 
 
