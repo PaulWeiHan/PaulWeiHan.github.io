@@ -20,6 +20,9 @@ layout: post
 -------------------
 ## Model 00
 
+
+-------
+**Silly Way Saved**
 [solver file](mymodel/00/lenet_solver.prototxt)
 
 [net file](mymodel/00/train_test.prototxt)
@@ -36,10 +39,15 @@ layout: post
 
 [train04_meanerrordegree](train_result/model00/Train04_meanerrordegree.html)
 
+---------
+
 
 -------------------
 ## Model 01
 
+
+-------
+**Silly Way Saved**
 [solver file](mymodel/01/lenet_solver.prototxt)
 
 [net file](mymodel/01/train_test.prototxt)
@@ -56,4 +64,5 @@ layout: post
 
 [train04](train_result/model00/Train04_meanerror_6525.html)
 
+-------
 
