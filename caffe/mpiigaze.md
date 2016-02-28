@@ -62,7 +62,7 @@ layout: post
 
 [train03_meanerrordegree](train_result/model01/Train03_meanerrordegree.html)
 
-[train04](train_result/model00/Train04_meanerror_6525.html)
+[train04](train_result/model01/Train04_meanerror_6525.html)
 
 -------
 
