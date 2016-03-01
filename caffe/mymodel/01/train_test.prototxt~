@@ -18,7 +18,7 @@ layers {
   top: "data"
   top: "label"
   hdf5_data_param {
-    source: "examples/mymodel/01/train_list.txt"
+    source: "examples/mymodel/01/test_list.txt"
     batch_size: 1000
   }
   include: { phase: TEST }

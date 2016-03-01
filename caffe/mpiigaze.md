@@ -15,17 +15,81 @@ layout: post
 
 [DatasetOfficial](http://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/gaze-based-human-computer-interaction/appearance-based-gaze-estimation-in-the-wild/?sword_list%5B%5D=MPIIGaze&no_cache=1)
 
-# Training result
+
+# Training result 
+
+-------
+
+## Model 00
+
+[solver file](mymodel/00/lenet_solver.prototxt)
+
+[net file](mymodel/00/train_test.prototxt)
+
+[train00](train_result0/model00/train00/Train00.html)
+
+[train01](train_result0/model00/train01_addedtestdataset/Train.html)
+
+[train02](train_result0/model00/train02_addedmeanerrorcurve/Train.html)
+
+[train03](train_result0/model00/train03/Train.html)
+
+[train04](train_result0/model00/train04_1000/Train.html)
+
+[train05](train_result0/model00/train05/Train.html)
+
+
+------
+
+## Model 01
+
+[solver file](mymodel/01/lenet_solver.prototxt)
+
+[net file](mymodel/01/train_test.prototxt)
+
+[train00](train_result0/model01/train00/Train.html)
+
+[train01](train_result0/model01/train01/Train.html)
+
+[train02](train_result0/model01/train02/Train.html)
+
+[train03](train_result0/model01/train03/Train.html)
+
+[train04](train_result0/model01/train04/Train.html)
+
+[train05](train_result0/model01/train05/Train.html)
+
+------
+
+## Model 02
+
+[solver file](mymodel/02/lenet_solver.prototxt)
+
+[net file](mymodel/02/train_test.prototxt)
+
+[train04](train_result0/model02/train04_1000/Train.html)
+
+[train05](train_result0/model02/train05/Train.html)
+
+------
+
+## Model 03
+
+[solver file](mymodel/03/lenet_solver.prototxt)
+
+[net file](mymodel/03/train_test.prototxt)
+
+[train05](train_result0/model03/train05/Train.html)
+
+------
+
+# Training result old
 
 -------------------
 ## Model 00
 
 
 -------
-**Silly Way Saved**
-[solver file](mymodel/00/lenet_solver.prototxt)
-
-[net file](mymodel/00/train_test.prototxt)
 
 [train00](train_result/model00/Train00.html)
 
@@ -48,6 +112,7 @@ layout: post
 
 -------
 **Silly Way Saved**
+
 [solver file](mymodel/01/lenet_solver.prototxt)
 
 [net file](mymodel/01/train_test.prototxt)
