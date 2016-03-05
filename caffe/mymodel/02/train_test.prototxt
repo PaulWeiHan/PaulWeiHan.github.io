@@ -1,7 +1,7 @@
 name: "MPIIGaze"
-layers {
+layer {
   name: "MPII_train"
-  type: HDF5_DATA
+  type: "HDF5Data"
   top: "data"
   top: "label"
   hdf5_data_param {
@@ -12,9 +12,9 @@ layers {
 }
 
 
-layers {
+layer {
   name: "MPII_test"
-  type: HDF5_DATA
+  type: "HDF5Data"
   top: "data"
   top: "label"
   hdf5_data_param {
@@ -24,9 +24,9 @@ layers {
   include: { phase: TEST }
 }
 
-layers {
+layer {
   name: "cutLabel"
-  type: SLICE
+  type: "Slice"
   bottom: "label"
   top: "gaze"
   top: "headpose"
@@ -36,13 +36,17 @@ layers {
   }
 }
 
-layers {
+layer {
   name: "conv1"
-  type: CONVOLUTION
+  type: "Convolution"
   bottom: "data"
   top: "conv1"
-  blobs_lr: 1
-  blobs_lr: 2
+  param {
+    lr_mult: 1
+  }
+  param {
+    lr_mult: 2
+  }
   convolution_param {
     num_output: 20
     kernel_size: 5
@@ -56,9 +60,9 @@ layers {
     }
   }
 }
-layers {
+layer {
   name: "pool1"
-  type: POOLING
+  type: "Pooling"
   bottom: "conv1"
   top: "pool1"
   pooling_param {
@@ -68,13 +72,17 @@ layers {
   }
 }
 
-layers {
+layer {
   name: "conv2"
-  type: CONVOLUTION
+  type: "Convolution"
   bottom: "pool1"
   top: "conv2"
-  blobs_lr: 1
-  blobs_lr: 2
+  param {
+    lr_mult: 1
+  }
+  param {
+    lr_mult: 2
+  }
   convolution_param {
     num_output: 30
     kernel_size: 5
@@ -89,9 +97,9 @@ layers {
   }
 }
 
-layers {
+layer {
   name: "pool2"
-  type: POOLING
+  type: "Pooling"
   bottom: "conv2"
   top: "pool2"
   pooling_param {
@@ -101,13 +109,17 @@ layers {
   }
 }
 
-layers {
+layer {
   name: "conv3"
-  type: CONVOLUTION
+  type: "Convolution"
   bottom: "pool2"
   top: "conv3"
-  blobs_lr: 1
-  blobs_lr: 2
+  param {
+    lr_mult: 1
+  }
+  param {
+    lr_mult: 2
+  }
   convolution_param {
     num_output: 50
     kernel_size: 5
@@ -122,9 +134,9 @@ layers {
   }
 }
 
-layers {
+layer {
   name: "pool3"
-  type: POOLING
+  type: "Pooling"
   bottom: "conv3"
   top: "pool3"
   pooling_param {
@@ -135,29 +147,33 @@ layers {
 }
 
 
-layers {
+layer {
   name: "flatdata"
-  type: FLATTEN
+  type: "Flatten"
   bottom: "pool3"
   top: "flatdata"
 }
 
-layers {
+layer {
   name: "concat_headpose_eyeappearance"
-  type: CONCAT
+  type: "Concat"
   bottom: "flatdata"
   bottom: "headpose"
   top: "cat"
 }
 
 
-layers {
+layer {
   name: "ip3"
-  type: INNER_PRODUCT
+  type: "InnerProduct"
   bottom: "cat"
   top: "ip3"
-  blobs_lr: 1
-  blobs_lr: 2
+  param {
+    lr_mult: 1
+  }
+  param {
+    lr_mult: 2
+  }
   inner_product_param {
     num_output: 3
     weight_filler {
@@ -169,9 +185,9 @@ layers {
   }
 }
 
-layers {
+layer {
   name: "loss"
-  type: EUCLIDEAN_LOSS
+  type: "EuclideanLoss"
   bottom: "ip3"
   bottom: "gaze"
   top: "loss"

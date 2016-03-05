@@ -1,0 +1,98 @@
+name: "MPIIGaze"
+layer {
+  name: "MPII_train"
+  type: "HDF5Data"
+  top: "data"
+  top: "label"
+  hdf5_data_param {
+    source: "examples/mymodel/04/train_list.txt"
+    batch_size: 1000
+  }
+  include: { phase: TRAIN }
+}
+
+
+layer {
+  name: "MPII_test"
+  type: "HDF5Data"
+  top: "data"
+  top: "label"
+  hdf5_data_param {
+    source: "examples/mymodel/04/test_list.txt"
+    batch_size: 1000
+  }
+  include: { phase: TEST }
+}
+
+layer {
+  name: "cutLabel"
+  type: "Slice"
+  bottom: "label"
+  top: "gaze"
+  top: "headpose"
+  slice_param {
+    slice_dim: 1
+    slice_point: 3
+  }
+}
+
+layer {
+  name: "conv1/7x7_s1"
+  type: "Convolution"
+  bottom: "data"
+  top: "conv1/7x7_s1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 64
+    pad: 3
+    kernel_size: 7
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+      value: 0.2
+    }
+  }
+}
+
+layer {
+  name: "conv1/relu_7x7"
+  type: "ReLU"
+  bottom: "conv1/7x7_s1"
+  top: "conv1/7x7_s1"
+}
+
+layer {
+  name: "pool1/3x3_s1"
+  type: "Pooling"
+  bottom: "conv1/7x7_s1"
+  top: "pool1/3x3_s1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+
+layer {
+  name: "pool1/norm1"
+  type: "LRN"
+  bottom: "pool1/3x3_s1"
+  top: "pool1/norm1"
+  lrn_param {
+    local_size: 5
+    alpha: 0.0001
+    beta: 0.75
+  }
+}
+
+

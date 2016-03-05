@@ -65,6 +65,8 @@ layout: post
 
 [solver file](mymodel/02/lenet_solver.prototxt)
 
+[net image](mymodel/02/image.jpg)
+
 [net file](mymodel/02/train_test.prototxt)
 
 [train04](train_result0/model02/train04_1000/Train.html)
@@ -76,6 +78,8 @@ layout: post
 ## Model 03
 
 [solver file](mymodel/03/lenet_solver.prototxt)
+
+[net image](mymodel/03/image.jpg)
 
 [net file](mymodel/03/train_test.prototxt)
 
