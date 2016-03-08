@@ -38,6 +38,10 @@ layout: post
 
 [train05](train_result0/model00/train05/Train.html)
 
+[train06](train_result0/model00/train06_LOPO/Train.html)
+
+[train07](train_result0/model00/train07_euclidean_loss/Train.html)
+
 
 ------
 
@@ -59,6 +63,11 @@ layout: post
 
 [train05](train_result0/model01/train05/Train.html)
 
+[train06](train_result0/model01/train06_LOPO/Train.html)
+
+[train07](train_result0/model01/train07_euclidean_loss/Train.html)
+
+
 ------
 
 ## Model 02
@@ -73,6 +82,11 @@ layout: post
 
 [train05](train_result0/model02/train05/Train.html)
 
+[train06](train_result0/model02/train06_LOPO/Train.html)
+
+[train07](train_result0/model02/train07_euclidean_loss/Train.html)
+
+
 ------
 
 ## Model 03
@@ -85,7 +99,28 @@ layout: post
 
 [train05](train_result0/model03/train05/Train.html)
 
+[train06](train_result0/model03/train06_LOPO/Train.html)
+
+[train07](train_result0/model03/train07_euclidean_loss/Train.html)
+
+
 ------
+
+## Model 04
+
+[Based on BVLC GoogleNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet)
+
+[solver file](mymodel/04/quick_solver.prototxt)
+
+[net image](mymodel/04/image.jpg)
+
+[net file](mymodel/04/train_test.prototxt)
+
+[train07](train_result0/model04/train07_euclidean_loss/Train.html)
+
+
+
+-------
 
 # Training result old
 

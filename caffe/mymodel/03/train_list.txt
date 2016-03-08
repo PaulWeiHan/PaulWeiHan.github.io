@@ -1,1 +1,1 @@
-/home/renwh/gaze/renwh/data/MPII_data.h5
+/home/renwh/gaze/renwh/data/LOPO_train.h5
