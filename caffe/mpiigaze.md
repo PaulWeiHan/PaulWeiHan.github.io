@@ -131,15 +131,15 @@ layout: post
 
 [net file](mymodel/05/train_test.prototxt)
 
-[train07](train_result0/model04/train07_euclidean_loss/Train.html)
+[train07](train_result0/model05/train07_euclidean_loss/Train.html)
 
-[train07_dropoutradio_00](train_result0/model04/train07_dropoutradio_00/Train.html)
+[train07_dropoutradio_00](train_result0/model05/train07_dropoutradio_00/Train.html)
 
-[train07_dropoutradio_07](train_result0/model04/train07_dropoutradio_07/Train.html)
+[train07_dropoutradio_07](train_result0/model05/train07_dropoutradio_07/Train.html)
 
-[train07_dropoutradio_08](train_result0/model04/train07_dropoutradio_08/Train.html)
+[train07_dropoutradio_08](train_result0/model05/train07_dropoutradio_08/Train.html)
 
-[train07_without_dropout](train_result0/model04/train07_without_dropout/Train.html)
+[train07_without_dropout](train_result0/model05/train07_without_dropout/Train.html)
 
 
 
