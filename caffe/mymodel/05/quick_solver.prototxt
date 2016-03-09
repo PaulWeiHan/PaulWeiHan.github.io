@@ -1,0 +1,23 @@
+net: "examples/mymodel/05/train_test.prototxt"
+
+test_iter: 100
+test_interval: 500
+
+base_lr: 0.01
+momentum: 0.9
+weight_decay: 0.0005
+
+
+lr_policy: "poly"
+power: 0.5
+
+
+max_iter: 2400000
+
+display: 40
+
+snapshot: 40000
+snapshot_prefix: "examples/mymodel/05/bvlc_googlenet_quick"
+
+
+solver_mode: GPU

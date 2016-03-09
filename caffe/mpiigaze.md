@@ -122,6 +122,29 @@ layout: post
 
 -------
 
+
+## Model 05
+
+[solver file](mymodel/05/quick_solver.prototxt)
+
+[net image](mymodel/05/image_with_dropout.jpg)
+
+[net file](mymodel/05/train_test.prototxt)
+
+[train07](train_result0/model04/train07_euclidean_loss/Train.html)
+
+[train07_dropoutradio_00](train_result0/model04/train07_dropoutradio_00/Train.html)
+
+[train07_dropoutradio_07](train_result0/model04/train07_dropoutradio_07/Train.html)
+
+[train07_dropoutradio_08](train_result0/model04/train07_dropoutradio_08/Train.html)
+
+[train07_without_dropout](train_result0/model04/train07_without_dropout/Train.html)
+
+
+
+-------
+
 # Training result old
 
 -------------------
