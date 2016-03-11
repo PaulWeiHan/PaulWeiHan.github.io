@@ -6,7 +6,7 @@ layer {
   top: "label"
   hdf5_data_param {
     source: "examples/mymodel/05/train_list.txt"
-    batch_size: 1000
+    batch_size: 500
   }
   include: { phase: TRAIN }
 }
@@ -407,7 +407,7 @@ layer {
   bottom: "ip1"
   top: "ip1"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 

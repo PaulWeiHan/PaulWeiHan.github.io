@@ -18,6 +18,8 @@ layout: post
 
 # Training result 
 
+Model 08: 2D gaze direction error
+
 -------
 
 ## Model 00
@@ -41,6 +43,8 @@ layout: post
 [train06](train_result0/model00/train06_LOPO/Train.html)
 
 [train07](train_result0/model00/train07_euclidean_loss/Train.html)
+
+[train08](train_result0/model00/train08_2Dgazedirection_error/Train.html)
 
 
 ------
@@ -67,6 +71,7 @@ layout: post
 
 [train07](train_result0/model01/train07_euclidean_loss/Train.html)
 
+[train08](train_result0/model01/train08_2Dgazedirection_error/Train.html)
 
 ------
 
@@ -86,6 +91,7 @@ layout: post
 
 [train07](train_result0/model02/train07_euclidean_loss/Train.html)
 
+[train08](train_result0/model02/train08_2Dgazedirection_error/Train.html)
 
 ------
 
@@ -103,6 +109,7 @@ layout: post
 
 [train07](train_result0/model03/train07_euclidean_loss/Train.html)
 
+[train08](train_result0/model03/train08_2Dgazedirection_error/Train.html)
 
 ------
 
@@ -118,7 +125,7 @@ layout: post
 
 [train07](train_result0/model04/train07_euclidean_loss/Train.html)
 
-
+[train08](train_result0/model04/train08_2Dgazedirection_error/Train.html)
 
 -------
 
@@ -141,6 +148,7 @@ layout: post
 
 [train07_without_dropout](train_result0/model05/train07_without_dropout/Train.html)
 
+[train08](train_result0/model05/train08_2Dgazedirection_error/Train.html)
 
 
 -------
